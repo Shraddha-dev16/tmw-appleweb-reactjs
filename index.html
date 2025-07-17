@@ -12,26 +12,26 @@
     <!-- Swiper CSS (missing before) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
+    <!-- jQuary cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="script.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Apple Web</title>
+
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 fixed-top">
+    <div class="container-fluid ">
+        <div class=" row">
+            <div class="col-md-12 sticky-top">
                 <!-- ###########Navbar############# -->
                 <nav class="navbar navbar-expand-lg">
                     <!-- Container wrapper -->
-                    <div class="container-fluid ">
+                    <div class="container">
+                        
                         <a class="navbar-brand logo" href="#"><i class="bi bi-apple"></i></a>
-
-                        <!-- Toggle button -->
-                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button> -->
 
                         <div class="d-flex order-lg-3">
                             <!-- Toggle button for small screens -->
@@ -61,10 +61,12 @@
                             <!-- Left links -->
                             <ul class="navbar-nav mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" aria-current="page" href="#">Store</a>
+                                    <a class="nav-link text-dark" aria-current="page" href="#store" data-bs-toggle="collapse" 
+                                role="button" aria-expanded="false" aria-controls="collapseExample">Store</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">Mac</a>
+                                    <a class="nav-link text-dark" href="#mac" data-bs-toggle="collapse" 
+                                role="button" aria-expanded="false" aria-controls="collapseExample">Mac</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">iPad</a>
@@ -115,9 +117,68 @@
                 </nav>
             </div>
 
-            <!-- Search box Collpasing  -->
-             <div class="collapse" id="searching" style="width: 100%;">
+            <!-- Nav Section Collapsing -->
+             <div class="collapse border border-2 border-danger mt-5" id="store" style="width: 100%;">
                 <div class="card card-body d-flex justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-2">
+                                <p class="navcard">Shop</p>
+                                <h3>Shop the Latest</h3>
+                                <h3>Mac</h3>
+                                <h3>iPad</h3>
+                                <h3>iPhone</h3>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="navcard">Quick List</p>
+                                <p>Find Store</p>
+                                <p>Order Status</p>
+                                <p>Ways to buy</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="navcard">Shop special store</p>
+                                <p>Education</p>
+                                <p>Business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse mt-5" id="mac" style="width: 100%;">
+                <div class="card card-body d-flex justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-2">
+                                <p class="navcard">Explo   re Mac</p>
+                                <h3>Explore All Mac</h3>
+                                <h3>MacBookAir</h3>
+                                <h3>MacBookPro</h3>
+                               
+                            </div>
+                            <div class="col-md-2">
+                                <p class="navcard">Shop Mac</p>
+                                <p>Shop Mac</p>
+                                <p>Shop Accessories</p>
+                                
+                            </div>
+                            <div class="col-md-2">
+                                <p class="navcard">More For Mac</p>
+                                <p>amc Care</p>
+                                <p>Apple Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Search box Collpasing  -->
+             <div class="collapse mt-5" id="searching" style="width: 100%;">
+                <div class="card card-body d-flex justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-8">
                     <div class="input-group rounded p-3" style="width: 30%;">
                         <span class="input-group-text border-0" id="search-addon">
                             <i class="bi bi-search"></i>
@@ -127,39 +188,47 @@
                     </div>
                     <div class="search">
                         <p>Quick Links</p>
-                        <p><a href=""><i class="bi bi-arrow-right"></i>Find a Store</a></p>
-                        <p><a href=""><i class="bi bi-arrow-right"></i>Accessories</a></p>
-                        <p><a href=""><i class="bi bi-arrow-right"></i>Air Pods</a></p>
-                        <p><a href=""><i class="bi bi-arrow-right"></i>Apple Intelligence</a></p>
-                        <p><a href=""><i class="bi bi-arrow-right"></i>Apple Trade in</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right">&nbsp;</i>Find a Store</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right">&nbsp;</i>Accessories</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right">&nbsp;</i>Air Pods</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right">&nbsp;</i>Apple Intelligence</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right">&nbsp;</i>Apple Trade in</a></p>
                     </div>
+                    </div>
+                    </div>
+                </div>
                 </div>
             </div>
 
             <!-- Shopping box Collpasing  -->
 
-            <div class="collapse" id="shopping" style="width: 100%;">
+            <div class="collapse mt-5" id="shopping" style="width: 100%;">
                 <div class="card card-body d-flex justify-content-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-8">
                     <div class="input-group rounded p-3" style="width: 30%;">
                         <h2>Your Bag is empty.</h2>
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        
                         
                     </div>
-                    <div class="search">
-                        <p>my Profile</p>
-                        <p><i class="bi bi-heart"></i><a href="">favourites</a></p>
-                        <p><a href=""><i class="bi bi-box-seam"></i>Orders</a></p>
-                        <p><a href=""><i class="bi bi-person"></i>Accounts</a></p>
-                        <p><a href=""><i class="bi bi-person-circle"></i>Sign in</a></p>
-                        
+                    <div class="shop">
+                        <p>My Profile</p>
+                        <p><i class="bi bi-heart"></i>&nbsp;<a href="">Favourites</a></p>
+                        <p><i class="bi bi-box-seam"></i>&nbsp;<a href="">Orders</a></p>
+                        <p><i class="bi bi-person"></i>&nbsp;<a href="">Accounts</a></p>
+                        <p><i class="bi bi-person-circle"></i>&nbsp;<a href="">Sign in</a></p>
+                    </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
 
             <!-- Offer Chart -->
             
-            <div class="col-md-12 mt-5">
-                <div class="mt-2">
+            <div class="border border-2 border-success col-md-12">
+                <div class="">
                 <p class="text-center ">Get up to 12 months of No Cost EMI◊ plus up to ₹8000.00 instant cashback‡ on
                     selected products with eligible cards. <a href="">Shop <i class="bi bi-chevron-right"></i></a> </p>
                 </div>
@@ -168,31 +237,63 @@
 
             <!-- ############section-1 ##################-->
             <div class="col-md-12 whaledesk">
-                <img src="./img/whale1.png" alt="" width="100%" height="600px">
+                <img src="assets/img/whale1.png" alt="" width="100%" height="600px">
             </div>
 
 
             <!-- laptopview -->
             <div class="col-md-12 whalelap">
-                <img src="./img/whale2.png" alt="" width="100%" height="600px">
+                <img src="assets/img/whale2.png" alt="" width="100%" height="600px">
             </div>
 
             <!-- mobile view -->
 
             <div class="col-md-12 whalemob">
-                <img src="./img/whalemv.png" alt="" width="100%" height="600px">
+                <img src="assets/img/whale2.png" alt="" width="100%" height="600px">
             </div>
 
             <!-- ############section-2 ##################-->
             <div class="col-md-12">
-                <img src="./img/section_mob.jpg" alt="" width="100%" height="600px">
+                <img src="assets/img/section_mob.jpg" alt="" width="100%" height="600px">
             </div>
+            <div class="col-md-12 mt-3">
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 100%;">
+                    <img src="assets/img/slide3.avif" class="card-img-top" alt="...">
+                        
+                    </div>
+                </div>
+
+                 <div class="col-md-6">
+                    <div class="card" style="width: 100%;">
+                    <img src="assets/img/slide3.avif" class="card-img-top" alt="...">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 100%;">
+                    <img src="assets/img/slide3.avif" class="card-img-top" alt="...">
+                        
+                    </div>
+                </div>
+
+                 <div class="col-md-6">
+                    <div class="card" style="width: 100%;">
+                    <img src="assets/img/slide3.avif" class="card-img-top" alt="...">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+
 
             <!-- ############section-3 ##################-->
             <div class="col-md-12">
-
-
-
                 <section class="section slider-section">
                     <div class="container">
                         <div class="swiper swiper-slider">
@@ -273,24 +374,22 @@
                         </div>
 
                         <div class="col-md-2">
-                            <b>Account</b>
-                            <p>Manage Your Apple Storage</p>
-                            <p>Apple Store Account</p>
-                            <p>iCloud.com</p>
-                            <br>
-                            <b>Entertainment</b>
-                            <p>Apple one</p>
-                            <p>Apple Tv</p>
-                            <P>Apple Music</P>
-                            <p>Apple Arcade</p>
-                            <p>Apple Proadcast</p>
-                            <b>Apple book</b>
-                            <p>Apple Store</p>
+                            <b>Apple Store</b>
+                            <p>Find a store</p>
+                            <p>genius Bar</p>
+                            <p>Today at Apple</p>
+                            <p>Group Reservation</p>
+                            <p>Apple Camp</p>
+                            <p>Apple Trade In</p>
+                            <p>Ways to buy</p>
+                            <p>Recyaclling Programme</p>
+                            <p>Order Status</p>
+                            <p>Shopping Help</p>
                         </div>
                         <div class="col-md-3">
-                            <b>Account</b>
-                            <p>Manage Your Apple Storage</p>
-                            <p>Apple Store Account</p>
+                            <b>For Business</b>
+                            <p>Apple Business</p>
+                            <p>Shop For Business
                             <p>iCloud.com</p>
                             <br>
                             <b>Entertainment</b>
@@ -352,45 +451,87 @@
                     <div class="col-sm-12">
 
                         <div class="dropdown">
-                            <div class="dropdown-toggle footerlist" type="button" id="dropdownMenuButton1"
+                            <div class="dropdown-toggle footerlist " type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
+                                Shop and Learn
 
                             </div>
                             <ul class="dropdown-menu footerlist" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Store</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Mac</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">iPad</a></li>
                             </ul>
                         </div>
                         <div class="dropdown">
                             <div class="dropdown-toggle footerlist" type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
+                                Apple Wallet
 
                             </div>
                             <ul class="dropdown-menu footerlist" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Wallet</a></li>
+                                
+                               
+                            </ul>
+                        </div>
+                       
+                       
+                        <div class="dropdown">
+                            <div class="dropdown-toggle footerlist" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apple Store
+
+                            </div>
+                            <ul class="dropdown-menu footerlist" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Find store</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Genius bar</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Today at apple</a></li>
                             </ul>
                         </div>
                         <div class="dropdown">
                             <div class="dropdown-toggle footerlist" type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
+                                For Business
 
                             </div>
                             <ul class="dropdown-menu footerlist" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <hr>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Apple and Business</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Shop and Business</a></li>
+                                
+                               
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle footerlist" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                For Education
+
+                            </div>
+                            <ul class="dropdown-menu footerlist" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Apple and Education</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Shop for education</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle footerlist" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                For Healthcare
+
+                            </div>
+                            <ul class="dropdown-menu footerlist" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Apple in Healthcare</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Shop in Healthcare</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">Health on Apple Watch</a></li>
                             </ul>
                         </div>
                     </div>
@@ -412,7 +553,7 @@
 
                 </div>
         </div>
-        </footer>
+    </footer>
 
     </div>
     </div>

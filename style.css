@@ -7,8 +7,10 @@ body{
 }
 nav
 {
-  background-color: #f7f2f2;
+  background-color: rgba(255, 255, 255, 0.479);
   position: fixed;
+  /* border: solid;
+  border-color: red; */
   top: 0;
 }
 nav div a{
@@ -32,6 +34,21 @@ nav div a{
 .search p a{
   text-decoration: none;
   color: black;
+}
+
+.shop p{
+  color: rgb(104, 103, 103);
+  padding-left: 1%;
+}
+.shop p a{
+  text-decoration: none;
+  color: black;
+}
+
+/* nav card */
+.navcard{
+  color: rgb(119, 115, 115);
+  font-size: 15px;
 }
 footer p span a{
     color: #000;
@@ -69,14 +86,14 @@ footer div a{
 }
 
 /* laptop view */
-@media screen and (max-width: 300px), screen and (min-width: 1000px){
+@media screen and (max-width: 600px), screen and (min-width: 1000px){
   div.whalelap {
     display:none;
   }
 }
 
 /* mobile view */
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 600px) {
   div.whalemob {
     display:none;
   }
