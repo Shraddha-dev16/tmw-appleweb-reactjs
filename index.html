@@ -21,9 +21,9 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 fixed-top">
                 <!-- ###########Navbar############# -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg">
                     <!-- Container wrapper -->
                     <div class="container-fluid ">
                         <a class="navbar-brand logo" href="#"><i class="bi bi-apple"></i></a>
@@ -38,15 +38,16 @@
 
                             <!-- Icons -->
                             <!-- Search Icon Trigger -->
-                            <a class="text-reset me-3 mt-2" data-bs-toggle="collapse" href="#collapseExample"
+                            <a class="text-reset me-3 mt-2" data-bs-toggle="collapse" href="#searching"
                                 role="button" aria-expanded="false" aria-controls="collapseExample">
                                 <i class="bi bi-search"></i>
                             </a>
-
+                            <!-- Shopping Icon Trigger -->
+                            <a class="text-reset px-3 mt-2 " data-bs-toggle="collapse" href="#shopping" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-bag text-dark"></i></a>
                             <!-- Collapsible Section -->
 
 
-                            <a class="text-reset px-3 mt-2" href="#"><i class="bi bi-bag"></i></a>
+                            
                             <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -60,34 +61,34 @@
                             <!-- Left links -->
                             <ul class="navbar-nav mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="#">Store</a>
+                                    <a class="nav-link text-dark" aria-current="page" href="#">Store</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Mac</a>
+                                    <a class="nav-link text-dark" href="#">Mac</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">iPad</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">iPad</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">iPhone</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">iPhone</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Watch</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">Watch</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">AirPods</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">AirPods</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">TV &Home</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">TV &Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Entertainment</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">Entertainment</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Accessories</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">Accessories</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Support</a>
+                                    <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">Support</a>
                                 </li>
                                 <!-- <li class="nav-item">
                                         <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-search"></i></a>
@@ -114,41 +115,81 @@
                 </nav>
             </div>
 
-            <div class="col-md-12 mt-2">
-                <p class="text-center">Get up to 12 months of No Cost EMI◊ plus up to ₹8000.00 instant cashback‡ on
-                    selected products with eligible cards. <a href="">Shop <i class="bi bi-chevron-right"></i></a> </p>
-            </div>
-            <div class="collapse" id="collapseExample" style="width: 100%;">
-                <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
-                    when the user activates the relevant trigger.
+            <!-- Search box Collpasing  -->
+             <div class="collapse" id="searching" style="width: 100%;">
+                <div class="card card-body d-flex justify-content-center">
+                    <div class="input-group rounded p-3" style="width: 30%;">
+                        <span class="input-group-text border-0" id="search-addon">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        
+                    </div>
+                    <div class="search">
+                        <p>Quick Links</p>
+                        <p><a href=""><i class="bi bi-arrow-right"></i>Find a Store</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right"></i>Accessories</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right"></i>Air Pods</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right"></i>Apple Intelligence</a></p>
+                        <p><a href=""><i class="bi bi-arrow-right"></i>Apple Trade in</a></p>
+                    </div>
                 </div>
             </div>
 
+            <!-- Shopping box Collpasing  -->
+
+            <div class="collapse" id="shopping" style="width: 100%;">
+                <div class="card card-body d-flex justify-content-center">
+                    <div class="input-group rounded p-3" style="width: 30%;">
+                        <h2>Your Bag is empty.</h2>
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        
+                    </div>
+                    <div class="search">
+                        <p>my Profile</p>
+                        <p><i class="bi bi-heart"></i><a href="">favourites</a></p>
+                        <p><a href=""><i class="bi bi-box-seam"></i>Orders</a></p>
+                        <p><a href=""><i class="bi bi-person"></i>Accounts</a></p>
+                        <p><a href=""><i class="bi bi-person-circle"></i>Sign in</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Chart -->
+            
+            <div class="col-md-12 mt-5">
+                <div class="mt-2">
+                <p class="text-center ">Get up to 12 months of No Cost EMI◊ plus up to ₹8000.00 instant cashback‡ on
+                    selected products with eligible cards. <a href="">Shop <i class="bi bi-chevron-right"></i></a> </p>
+                </div>
+            </div>
+           
+
             <!-- ############section-1 ##################-->
-            <div class="col-md12 whaledesk">
+            <div class="col-md-12 whaledesk">
                 <img src="./img/whale1.png" alt="" width="100%" height="600px">
             </div>
 
 
             <!-- laptopview -->
-            <div class="col-md12 whalelap">
+            <div class="col-md-12 whalelap">
                 <img src="./img/whale2.png" alt="" width="100%" height="600px">
             </div>
 
             <!-- mobile view -->
 
-            <div class="col-md12 whalemob">
+            <div class="col-md-12 whalemob">
                 <img src="./img/whalemv.png" alt="" width="100%" height="600px">
             </div>
 
             <!-- ############section-2 ##################-->
-            <div class="col-md12">
-                <img src="./img/mobimg.jpg" alt="" width="100%" height="600px">
+            <div class="col-md-12">
+                <img src="./img/section_mob.jpg" alt="" width="100%" height="600px">
             </div>
 
             <!-- ############section-3 ##################-->
-            <div class="col-md12">
+            <div class="col-md-12">
 
 
 
@@ -416,6 +457,7 @@
                 },
             },
         });
+        
     </script>
 </body>
 

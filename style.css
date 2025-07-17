@@ -5,6 +5,15 @@ body{
     margin: 0;
     padding: 0;
 }
+nav
+{
+  background-color: #f7f2f2;
+  position: fixed;
+  top: 0;
+}
+nav div a{
+  color: #000;
+}
 
 /* Footer */
 .section-1{
@@ -14,6 +23,15 @@ body{
 }
 .listsec{
   font-size: 12px;
+}
+
+.search p{
+  color: #9c9595;
+  padding-left: 1%;
+}
+.search p a{
+  text-decoration: none;
+  color: black;
 }
 footer p span a{
     color: #000;
