@@ -1,0 +1,60 @@
+/* Media Quary */
+
+
+/* Section Part */
+
+/* desktop view */
+@media screen and (max-width: 1000px) {
+  div.whaledesk {
+    display:none;
+  }
+}
+
+/* laptop view */
+@media screen and (max-width: 600px), screen and (min-width: 1000px){
+  div.whalelap {
+    display:none;
+  }
+}
+
+/* mobile view */
+@media screen and (min-width: 600px) {
+  div.whalemob {
+    display:none;
+  }
+}
+
+
+/* footer section-1 */
+@media screen and (min-width: 800px), screen and (max-width: 1024px) {
+  footer.section-1 {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer.footer1 {
+    display:none;
+  }
+}
+
+/* footer section-2 */
+
+@media screen and (min-width: 800px) {
+  footer.section-2 {
+    display: none;
+  }
+}
+
+
+
+  @media (max-width: 768px) {
+  .mega-dropdown {
+    width: 100vw;
+    left: 0 !important;  /* Optional: make it full-width dropdown */
+    right: 0;
+    padding: 1rem;
+  }
+}
