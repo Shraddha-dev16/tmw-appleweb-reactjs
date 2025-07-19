@@ -10,15 +10,10 @@ nav div a{
   color: #000;
 }
 
-/* Footer */
-.section-1{
-    padding-left: 15%;
-    padding-right: 15%;
-    /* font-size: 12px; */
-}
+/* 
 .listsec{
   font-size: 12px;
-}
+} */
 
 .search p{
   color: #9c9595;
@@ -69,12 +64,41 @@ footer div a{
 
 
   /* Footer Nested List */
- .nested-row td {
+ /* .nested-row td {
     padding-left: 40px;
     background-color: #f9f9f9;
+  } */
+
+
+  .arrow {
+    cursor: pointer;
+    padding: 0.75rem;
   }
 
+  .arrow-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push icon to right */
+    width: 100%;
+  }
 
+  .arrow-icon {
+    transition: transform 0.3s ease;
+    
+    
+  }
 
+  .arrow-icon.rotate {
+    transform: rotate(90deg); /* ➤ becomes ▼ */
+  }
+
+  .nested-row td {
+    padding-left: 40px;
+    background-color: #f8f9fa;
+  }
+
+  .ctable-wrapper {
+    overflow-x: auto;
+  }
 
 
